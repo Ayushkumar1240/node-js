@@ -1,0 +1,11 @@
+{
+  "name": "myfirstcalci",
+  "version": "1.0.0",
+  "description": "This is only for testing purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayush Kumar",
+  "license": "ISC"
+}

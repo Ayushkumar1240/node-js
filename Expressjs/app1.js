@@ -1,6 +1,25 @@
 const express=require('express')
 const app=express();
 
+//middleware
+const mymisslewarefunction1=require('./middlewares/mymisslewarefunction1');
+const mymisslewarefunction2=require('./middlewares/mymisslewarefunction2');
+
+
+// app.use(function(req,res,next){
+//     console.log('I am custom middleware...');
+//     next();
+// })
+
+
+
+app.use(mymisslewarefunction1);
+app.use(mymisslewarefunction2);
+
+
+
+
+
 app.get('/',(req,res)=>{
     res.send("Hello Ayush");
 })
